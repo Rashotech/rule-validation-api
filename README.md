@@ -9,7 +9,7 @@ Accepted condition values are:
   ii/ neq: Means the field value should not be equal to the condition value 
   iii/ gt: Means the field value should be greater than the condition value 
   iv/ gte: Means the field value should be greater than or equal to the condition value 
-  v/ contains: Means the field value should contain the condition value
+  v/ contains: Means the field value should contain the condition value.
   
 The API has a rule validation route (POST "/validate-rule")
 The route should accept JSON data containing a rule and data field to validate the rule against. Example:
