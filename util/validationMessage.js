@@ -15,4 +15,16 @@ const responseMessage = (field, field_value, condition, condition_value, status)
     return response;
   };
 
-  module.exports = responseMessage;
+const response = (res, field_value, condition_value, successMessage, errorMessage) => {
+    if (field_value >= condition_value ) {
+        return res.status(200).json(successMessage);
+    }
+    else {
+         return res.status(400).json(errorMessage);
+    }
+};
+
+  module.exports = {
+    responseMessage,
+    response
+  };
